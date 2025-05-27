@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>Registro The Last of Us</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+ <!-- Titulo de la pagina que le puse-->
+<header>
+    <h1>Zona de Cuarentena: Registro de Supervivientes</h1>
+    <h3>Formulario oficial de la FEDRA</h3>
+  </header>
+
+  <!-- Formulario de ingreso de datos donde el infectado especifica su información-->
+  <div class="seccion">
+    <h2>Formulario de Ingreso</h2>
+    <form>
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" required><br>
+
+      <label for="edad">Edad:</label>
+      <input type="number" id="edad" name="edad" required><br>
+
+      <label for="ciudad">Última ciudad conocida:</label>
+      <input type="text" id="ciudad" name="ciudad"><br>
+
+      <p>¿Infectado?</p>
+      <input type="radio" id="no" name="infectado" value="no" checked>
+      <label for="no">No</label><br>
+      <input type="radio" id="si" name="infectado" value="si">
+      <label for="si">Sí</label><br><br>
+
+      <label for="comentarios">Observaciones (mordidas, heridas, etc.):</label><br>
+      <textarea id="comentarios" rows="4" cols="40"></textarea><br>
+
+      <label>
+        <input type="checkbox" name="acepto"> Confirmo que no he sido mordido en las últimas 48 horas.
+      </label><br><br>
+
+      <button type="submit">Enviar registro</button>
+    </form>
+  </div>
+
+  <!-- Sección 2: Tabla con la información de los últimos -->
+  <div class="seccion">
+    <h2>Últimos Supervivientes Registrados</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Edad</th>
+          <th>Estado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Joel Miller</td>
+          <td>52</td>
+          <td>No infectado</td>
+        </tr>
+        <tr>
+          <td>Ellie Williams</td>
+          <td>19</td>
+          <td>Inmune</td>
+        </tr>
+        <tr>
+          <td>Tess Servopoulos</td>
+          <td>36</td>
+          <td>Infectada</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Sección 3: Imagen del zombie -->
+  <div class="seccion">
+    <h2>Foto real de un Gordinflon <3 </h2>
+    <img src="assets/Gordinflon1.webp" alt="Gordinflon">
+    <p>FEDRA monitorea zonas de cuarentena. Mantente alerta. No salgas sin autorización.</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Trabajo para progra web por parte de Pablo Garro <3 </p>
+  </footer>
+
+</body>
+</html>
